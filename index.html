@@ -26,7 +26,7 @@
                   
                 </div>
                 <div class="navbar-end">
-                  <button class="btn ">Bus<img src="images/bus-icon.png" alt=""></button>
+                  <button class="btn border-green-400 bg-green-100 text-green-600 ">Bus<img src="images/bus-icon.png" alt=""></button>
                 </div>
               </div>
         </div>
@@ -39,7 +39,7 @@
                 <h1 class="text-bold text-7xl text-center font-bold text-green-500">Hanif Paribahan</h1>
                 <p class="text-white text-center px-28 py-10 text-2xl">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
                 <div class="px-[490px] ">
-                  <button class="btn btn-success text-black">Buy Tickets</button>
+                  <button class="btn btn-success text-black"><a href="#interface-section">Buy Tickets</a></button>
                 </div>
             </div>
         </section>
@@ -86,7 +86,7 @@
         </div>
         </section>
         <!--seat scetion-->
-        <section class="w-[1170px] h-[1500px] bg-[#F7F8F8] border-green-300 border-y-4 rounded-2xl">
+        <section id="interface-section" class="w-[1170px] h-[1400px] bg-[#F7F8F8] border-green-300 border-y-4 rounded-2xl">
           <section>
             <div class="text-center pt-20">
               <h1 class="text-4xl font-extrabold">Hanif Paribahan</h1>
@@ -94,7 +94,7 @@
             </div>
           </section>
           <!--Ticket info section start-->
-          <section class="bg-white w-[1000px] h-[418px] ml-[60px] flex">
+          <section class="bg-white w-[1000px] h-[418px] ml-[60px] flex mb-10">
             <div>
             <div class="flex pt-4">
               <div>
@@ -102,7 +102,7 @@
               <p class="pl-10"> coach no-34</p>
               </div>
               <div class="pl-60">
-                <button class="btn border-green-400 bg-green-100 text-green-600"> <img src="images/seat-green.png" alt="">40 seats left</button>
+                <button class="btn border-green-400 bg-green-100 text-green-600"> <img src="images/seat-green.png" alt=""><span>8</span> seats left</button>
               </div>
               </div>
               <div class="bg-[#F7F8F8]  h-[260px] m-4 rounded-lg p-6" >
@@ -114,6 +114,7 @@
                   <h1 class="text-black font-semibold">Departure Time</h1>
                   <h1 class="font-bold">9:00 PM</h1>
                 </div>
+                <p class="border-2 border-dashed"></p>
                 <div class="pl-8 space-x-8 mt-8">
                   <button class="bg-gray-200 btn pr-2">Boarding Point - Laxmipur</button>
                   <button class="bg-gray-200 btn">Dropping Point - Bogura</button>
@@ -124,13 +125,115 @@
             <div>
               <img src="images/info-devider.png" alt="">
             </div>
-            <div>
-              <h1>550 Taka
-                Per Seat</h1>
+            <div class="pt-36">
+              <img src="images/fare.png" alt="" class="border-dashed border-4">
+              <h1><span class="text-2xl font-bold">550 Taka</span><br>
+                <span class="text-xl">Per Seat</span></h1>
             </div>
           </section>
           <!--Ticket info end-->
+          <!--seat and passenger info section start-->
+          <section class="bg-white flex rounded-lg w-[1100px] h-[650px] ml-[60px]">
+            <!--select seat section-->
+            <section class="w-[60%] ml-4 pt-6">
+              <section>
+              <div>
+                <h1 class="text-xl font-bold mb-4">Select Your Seat</h1>
+                <p class="border-2 border-dashed"></p>
+              </div>
+              
+              <div class="flex gap-[470px] mt-6 mb-4">
+                <div class="flex">
+                  <img src="images/seat-gray.png" alt="">
+                  <h1>Available</h1>
+                </div>
+                <div class="flex">
+                  <img src="images/seat-green-filled.png" alt="">
+                  <h2>Selected</h2>
+                </div>
+              </div>
+              <p class="border-2 border-dashed"></p>
+              </section>
+              <!--seat section-->
+              <div class="mt-10 pl-[550px] ">
+                <button class="btn w-28"><img src="images/Vector (1).svg" alt=""></button>
+              </div>
+              <div class="flex mt-10 gap-10 ml-16">
+                <div class="ml-10">
+                  <div class="flex flex-row gap-5 mt-5">
+                    <button class="btn w-28">A1</button>
+                    <button class="btn w-28">A2</button>
+                  </div>
+                  <div class="flex flex-row gap-5 mt-5">
+                    <button class="btn w-28">b1</button>
+                    <button class="btn w-28">b2</button>
+                  </div>
+                </div>
+                <!---->
+                <div class="ml-10">
+                  <div class="flex flex-row gap-5 mt-5">
+                    <button class="btn w-28">A3</button>
+                    <button class="btn w-28">A4</button>
+                  </div>
+                  <div class="flex flex-row gap-5 mt-5">
+                    <button class="btn w-28">b3</button>
+                    <button class="btn w-28">b4</button>
+                  </div>
+                </div>
+              </div>
+
+            </section>
+            <!--select info end-->
+            <!--passengr info section-->
+            <section class="w-[40%] ml-4 mr-4 mt-6">
+              <div>
+                <h1 class="text-xl font-bold mb-4">Select Your Seat</h1>
+                <p class="border-2 border-dashed"></p>
+              </div>
+              <!--buy info-->
+              <section class="mt-8 ">
+                  <div class="bg-[#F7F8F8] w-[400px] h-[400px] rounded-xl pt-6 pl-10">
+                    <div class="flex gap-24 font-bold pb-4">
+                      <h3>Seat<span class="text-green-400 font-extrabold">2</span></h3>
+                      <h3>class</h3>
+                      <h3>price</h3>
+                    </div>
+                    <p class="border-2 border-dashed "></p>
+                    <div class="flex gap-24 pt-6 font-bold pb-4 text-[#03071299]">
+                      <h3>B2</span></h3>
+                      <h3>Economoy</h3>
+                      <h3>550</h3>
+                    </div>
+                    <div class="flex gap-24 pt-6 font-bold pb-4 text-[#03071299]">
+                      <h3>A2</h3>
+                      <h3>Economoy</h3>
+                      <h3>550</h3>
+                    </div>
+                    <p class="border-2 border-solid "></p>
+                    <div class="flex gap-44 pt-2 font-bold pb-4 text-black">
+                      <h3>Total Price</h3>
+                      <h3>BDT <span class="text-xl">1100</span></h3>
+                    </div>
+                    <div>
+                      <input type="text" class="btn"><button class="btn ">apply</button>
+                    </div>
+                    <div class="flex gap-44 pt-2 font-bold pb-4 text-black">
+                      <h3>Grand Total</h3>
+                      <h3>BDT <span class="text-xl">1100</span></h3>
+                    </div>
+                  </div>
+              </section>
+              <div class="pt-5 ">
+                <button class="btn btn-wide w-[395px] border-green-400 bg-[#1DD100] text-white font-bold">Next</button>
+              </div>
+            </section>
+          </section>
+          <!--passenger info end-->
         </section>
+    </main>
+    <!--successfull section-->
+    <main class="BG">
+
     </main>
 </body>
 </html>
