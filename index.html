@@ -127,7 +127,7 @@
             </div>
             <div class="pt-36">
               <img src="images/fare.png" alt="" class="border-dashed border-4">
-              <h1><span class="text-2xl font-bold">550 Taka</span><br>
+              <h1><span id="seat-price" class="text-2xl font-bold">550 Taka</span><br>
                 <span class="text-xl">Per Seat</span></h1>
             </div>
           </section>
@@ -162,30 +162,30 @@
                 <div class="ml-10">
                   <div class="flex flex-row gap-5 mt-5">
                     <div>
-                    <button  class="seat-no btn w-28">A1</button></div>
+                    <button id="button-1" onclick="handleClick1()" class="seat-no btn w-28">A1</button></div>
                     <div>
-                    <button  class="seat-no btn w-28">A2</button></div>
+                    <button id="button-2" onclick="handleClick2()" class="seat-no btn w-28">A2</button></div>
                   </div>
                   <div class="flex flex-row gap-5 mt-5">
                     <div>
-                    <button class="seat-no btn w-28">b1</button></div>
+                    <button id="button-3" onclick="handleClick3()" class="seat-no btn w-28">b1</button></div>
                     <div>
-                    <button class="seat-no btn w-28">b2</button></div>
+                    <button id="button-4" onclick="handleClick4()" class="seat-no btn w-28">b2</button></div>
                   </div>
                 </div>
                 <!---->
                 <div class="ml-10">
                   <div class="flex flex-row gap-5 mt-5">
                     <div>
-                    <button class="seat-no btn w-28">A3</button></div>
+                    <button id="button-5" onclick="handleClick5()" class="seat-no btn w-28">A3</button></div>
                     <div>
-                    <button class="seat-no btn w-28">A4</button></div>
+                    <button id="button-6" onclick="handleClick6()" class="seat-no btn w-28">A4</button></div>
                   </div>
                   <div class="flex flex-row gap-5 mt-5">
                     <div>
-                    <button class="seat-no btn w-28">b3</button></div>
+                    <button id="button-7" onclick="handleClick7()" class="seat-no btn w-28">b3</button></div>
                     <div>
-                    <button class="seat-no btn w-28">b4</button></div>
+                    <button id="button-8" onclick="handleClick7()" class="seat-no btn w-28">b4</button></div>
                   </div>
                 </div>
               </div>
@@ -207,11 +207,18 @@
                       <h3>class</h3>
                       <h3>price</h3>
                     </div>
-                    <ul id="seatNo-selected" class="select-seatNo">
+                    
+                    <p class="border-2 border-dashed "></p>
+                    <ul id="select-seat" class="selected-seat-sontainer">
 
                     </ul>
+                    <div class="flex gap-44 pt-2 font-bold pb-4 text-black">
+                      <h3>Total Price</h3>
+                      <h3>BDT <span id="total-price" class="text-xl">0</span></h3>
+                    </div>
+                    
                     <div class="mt-7">
-                      <input class="px-12 py-4 mx-6 outline-none" type="text" name="" id="inputText" placeholder="Use Any copuon">
+                      <input class="px-12 py-4 mx-6 outline-none rounded-lg" type="text" name="" id="inputText" placeholder="Use Any copuon">
                       <button class="btn absolute mt-1 -ml-24 bg-[#1DD100] text-white hover:bg-[#1DD100]">Apply</button>
                     </div>
                     <div class="flex gap-44 pt-2 font-bold pb-4 text-black">
