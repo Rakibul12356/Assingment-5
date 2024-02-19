@@ -39,7 +39,7 @@
                 <h1 class="text-bold text-7xl text-center font-bold text-green-500">Hanif Paribahan</h1>
                 <p class="text-white text-center px-28 py-10 text-2xl">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
                 <div class="px-[490px] ">
-                  <button class="btn btn-success text-black"><a href="#interface-section">Buy Tickets</a></button>
+                  <button id="btn-ticket" class="btn bg-[#1DD100] border-[#1DD100] font-bold text-black"><a href="#interface-section">Buy Tickets</a></button>
                 </div>
             </div>
         </section>
@@ -214,8 +214,9 @@
                       <h3>Total Price</h3>
                       <h3>BDT <span class="text-xl">1100</span></h3>
                     </div>
-                    <div>
-                      <input type="text" class="btn"><button class="btn ">apply</button>
+                    <div class="mt-7">
+                      <input class="px-12 py-4 mx-6 outline-none" type="text" name="" id="inputText" placeholder="Use Any copuon">
+                      <button class="btn absolute mt-1 -ml-24 bg-[#1DD100] text-white hover:bg-[#1DD100]">Apply</button>
                     </div>
                     <div class="flex gap-44 pt-2 font-bold pb-4 text-black">
                       <h3>Grand Total</h3>
@@ -251,5 +252,6 @@
       </div>
 
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
