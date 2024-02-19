@@ -4,7 +4,8 @@ document.getElementById('btn-ticket').addEventListener('click',function(){
 })
 const allSeat = document.getElementsByClassName("seat-no");
 let count = 0;
-let selectSeat = 8
+let selectSeat = 8;
+const ticketPrice = 550;
 for( const btn of allSeat){
     btn.addEventListener("click",function (e) {
       // console.log(e.target.parentNode.childNodes[1].innerText)
@@ -28,6 +29,10 @@ for( const btn of allSeat){
 
 
         //Total section
+        const totalprice = document.getElementById('total-price').innerText;
+        const convertedtotalprice = parseInt(totalprice);
+         document.getElementById('total-price').innerText = convertedtotalprice + ticketPrice ;
+
        
     })
 
@@ -79,3 +84,18 @@ function play(){
     const openSuccessfull = document.getElementById('successfull-section');
     openSuccessfull.classList.remove('hidden');
 }
+// Grand total
+
+const totalP = document.getElementById('total-price').innerText;
+const converttotalP = parseInt(totalP);
+const inputSaction =document.getElementById('cupon-code');
+const discount = document.getElementById('discount-price').innerText;
+const convertDiscount = parseInt(discount);
+function garandTotal(){
+    if(inputSaction === 'NEW15'){
+       convertDiscount =converttotalPtotalP * 0.20;
+    }
+}
+//const totalprice = document.getElementById('total-price').innerText;
+//const convertedtotalprice = parseInt(totalprice);
+//document.getElementById('total-price').innerText = convertedtotalprice + ticketPrice ;

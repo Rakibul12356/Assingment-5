@@ -218,12 +218,13 @@
                     </div>
                     
                     <div class="mt-7">
-                      <input class="px-12 py-4 mx-6 outline-none rounded-lg" type="text" name="" id="inputText" placeholder="Use Any copuon">
-                      <button class="btn absolute mt-1 -ml-24 bg-[#1DD100] text-white hover:bg-[#1DD100]">Apply</button>
+                      <input id="cupon-code"
+                       class="px-12 py-4 mx-6 outline-none rounded-lg" type="text" name="" id="inputText" placeholder="Use Any copuon">
+                      <button onclick="garandTotal()" class="btn absolute mt-1 -ml-24 bg-[#1DD100] text-white hover:bg-[#1DD100]">Apply</button>
                     </div>
                     <div class="flex gap-44 pt-2 font-bold pb-4 text-black">
                       <h3>Grand Total</h3>
-                      <h3>BDT <span class="text-xl">1100</span></h3>
+                      <h3>BDT <span id="discount-price" class="text-xl"></span></h3>
                     </div>
                   </div>
               </section>
