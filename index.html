@@ -31,7 +31,7 @@
               </div>
         </div>
     </header>
-    <main>
+    <main id="hide-section" class="">
         <!--banner section-->
         <section class="bg-[url(images/banner.png)] h-[550px] w-[1170px] ">
             <div class=" justify-center items-center  pt-20"> 
@@ -86,7 +86,7 @@
         </div>
         </section>
         <!--seat scetion-->
-        <section id="interface-section" class="w-[1170px] h-[1400px] bg-[#F7F8F8] border-green-300 border-y-4 rounded-2xl">
+        <section id="interface-section" class="w-[1170px] h-[1700px] bg-[#F7F8F8] border-green-300 border-y-4 rounded-2xl">
           <section>
             <div class="text-center pt-20">
               <h1 class="text-4xl font-extrabold">Hanif Paribahan</h1>
@@ -94,7 +94,7 @@
             </div>
           </section>
           <!--Ticket info section start-->
-          <section class="bg-white w-[1000px] h-[418px] ml-[60px] flex mb-10">
+          <section class="bg-white w-[1000px] h-[580px] ml-[60px] flex mb-10">
             <div>
             <div class="flex pt-4">
               <div>
@@ -200,7 +200,7 @@
               </div>
               <!--buy info-->
               <section class="mt-8 ">
-                  <div class="bg-[#F7F8F8] w-[400px] h-[450px] rounded-xl pt-6 pl-10">
+                  <div class="bg-[#F7F8F8] w-[400px] h-[350px] rounded-xl pt-6 pl-10">
                     <!--table-->
                     <div class="flex gap-24 font-bold pb-4">
                       <h3>Seat<span id="Selected-seat" class="text-green-400 font-extrabold">0</span></h3>
@@ -227,8 +227,14 @@
                     </div>
                   </div>
               </section>
+              <div>
+                <p  class="text-xl">passenger name</p>
+                <input class="border-2 w-[330px]  rounded-lg" type="text" placeholder="Phon number">
+                <p  class="text-xl">phone number</p>
+                <input class="border-2 w-[330px]  rounded-lg" type="text" placeholder="Phon number">
+              </div>
               <div class="pt-5 ">
-                <button class="btn btn-wide w-[395px] border-green-400 bg-[#1DD100] text-white font-bold">Next</button>
+                <button onclick="play()" class="btn btn-wide w-[395px] border-green-400 bg-[#1DD100] text-white font-bold">Next</button>
               </div>
             </section>
           </section>

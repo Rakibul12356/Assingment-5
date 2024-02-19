@@ -72,4 +72,10 @@ function handleClick7(){
 function handleClick8(){
     document.getElementById("button-8").disabled = true;
 }
-//tOTAL PRICE FUNCTION
+// hidden section
+function play(){
+    const hidemainsection = document.getElementById('hide-section');
+    hidemainsection.classList.add('hidden');
+    const openSuccessfull = document.getElementById('successfull-section');
+    openSuccessfull.classList.remove('hidden');
+}
